@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Pet Care</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+    <link rel="stylesheet" href="./static/css/animate.css">
+    
+    <link rel="stylesheet" href="./static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./static/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./static/css/magnific-popup.css">
+
+
+    <link rel="stylesheet" href="./static/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="./static/css/jquery.timepicker.css">
+
+    <link rel="stylesheet" href="./static/css/flaticon.css">
+    <link rel="stylesheet" href="./static/css/style.css">
+	
+
+
+<script type="text/javascript">
+    function nme(b2)
+{
+var k5=b2.length;
+var ch2=/([a-z])$/;
+if(ch2.test(b2)==false)
+{
+document.getElementById("np3").innerHTML="<font color='red'>*Only Alphabets*</font>";
+document.getElementById("mybutton").style.display="none";
+return false;
+}
+
+else
+{
+  document.getElementById("np3").innerHTML="";  
+  document.getElementById("mybutton").style.display="block";
+}
+}
+  
+  
+  
+    
+    function chkc(b2)
+{
+var k5=b2.length;
+var ch2=/([0-9])$/;
+if(ch2.test(b2)==false)
+{
+document.getElementById("o3").innerHTML="<font color='red'>*Only Numbers*</font>";
+document.getElementById("mybutton").style.display="none";
+
+return false;
+}
+else if(k5!=10)
+{
+document.getElementById("o3").innerHTML="<font color='red'>*Please Check Your Mobile Number*</font>";
+document.getElementById("mybutton").style.display="none";
+
+return false;
+}
+else
+{
+  
+  document.getElementById("o3").innerHTML=""; 
+  document.getElementById("mybutton").style.display="block"; 
+
+}
+}
+  
+ function chkp(c)
+{
+var s=document.getElementById("p10").value;
+
+if(s==c)
+{
+document.getElementById("p").innerHTML="<font color='Green'>*Password is Correct*</font>";
+document.getElementById("mybutton").style.display="none";
+return false;
+}
+else
+{
+document.getElementById("p").innerHTML="<font color='red'>*Verfy Password*</font>";
+document.getElementById("mybutton").style.display="block";
+}
+}
+
+
+
+
+function chknums(e)
+{
+  var x=e.which || e.keyCode;
+  if(x>=47 && x<=58)
+  {
+    return false;
+  }
+}
+
+
+function vem(a)  
+     {  
+          //var a = document.myform.email.value;  
+          var atposition = a.indexOf("@");  
+          var dotposition = a.lastIndexOf(".");  
+          if (atposition<1 || dotposition<atposition+2 || dotposition+2>=a.length) 
+          {  
+               document.getElementById("em").innerHTML="<font color='red'>*Please Check Your Email Address*</font>";
+               document.getElementById("mybutton").style.display="none"; 
+          }  
+          else
+{
+                document.getElementById("em").innerHTML="";  
+                document.getElementById("mybutton").style.display="block";
+}
+     }  
+    </script>
+  </head>
+  <body>
+
+    <div class="wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 d-flex align-items-center">
+						<p class="mb-0 phone pl-md-2">
+							<a href="#" class="mr-2"><span class="fa fa-phone mr-1"></span> +00 1234 567</a> 
+							<a href="#"><span class="fa fa-paper-plane mr-1"></span> youremail@email.com</a>
+						</p>
+					</div>
+					<div class="col-md-6 d-flex justify-content-md-end">
+						<div class="social-media">
+			    		<p class="mb-0 d-flex">
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i class="sr-only">Facebook</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i class="sr-only">Twitter</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i class="sr-only">Instagram</i></span></a>
+			    			<a href="#" class="d-flex align-items-center justify-content-center"><span class="fa fa-dribbble"><i class="sr-only">Dribbble</i></span></a>
+			    		</p>
+		        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+	    <div class="container-fluid">
+	    	<a class="navbar-brand" href="index.html"><span class="flaticon-pawprint-1 mr-2"></span>Pet Care</a>
+	      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="fa fa-bars"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item"><a href="./" class="nav-link">Home</a></li>
+                
+	        	<li class="nav-item"><a href="register" class="nav-link">User Registration</a></li>
+	        	<li class="nav-item"><a href="vet" class="nav-link">Veterinary Registration</a></li>
+				<li class="nav-item"><a href="trainer" class="nav-link">PET TRAINER Registration</a></li>
+				<div class="nav-item dropdown">
+					<a
+					  href="#"
+					  class="nav-link dropdown-toggle"
+					  data-bs-toggle="dropdown"
+					  >Pet Care</a
+					>
+					<div class="dropdown-menu bg-success m-0">
+					  <li class="nav-item"><a href="petcare" class="nav-link">Pet Care Registration</a></li>
+					  <li class="nav-item"><a href="petshop" class="nav-link">Pet Shop Registration</a></li>
+
+
+	  
+					</div>
+					</div>
+
+	        	
+	          <li class="nav-item "><a href="login" class="nav-link">login</a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <!-- END nav -->
+    <!-- END nav -->
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('./static/images/bg_2.jpg');" data-stellar-background-ratio="0.5">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text align-items-end">
+          <div class="col-lg-12 ftco-animate pb-5">
+            <h1 style="text-align: center;">PET SHOP REGISTER</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-6 text-center mb-5">
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-12">
+						<div class="wrapper">
+
+							<div class="row no-gutters">
+								<div class="col-lg-7">
+									<div class="contact-wrap w-100 p-md-5 p-4">
+										<form method="POST" id="contactForm" name="contactForm" class="contactForm" enctype="multipart/form-data">
+											<div class="row">
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="label" for="name"> Name</label>
+														<input required type="text" class="form-control" name="name" id="name" placeholder=" Enter Your Name"onkeyup="nme(this.value)" /><span id="np3"></span>
+													</div>
+												</div>
+												<div class="col-md-6"> 
+													<div class="form-group">
+														<label class="label" for="email">Email Address</label>
+														<input required type="email" class="form-control" name="email" id="email" placeholder=" Enter Your Email"onkeyup="vem(this.value)" /><span id="em"></span>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="form-group">
+														<label class="label" for="subject">password</label>
+														<input required type="password" class="form-control" name="pass" id="pass" placeholder="Enter Your Password">
+													</div>
+												</div>
+                                                <div class="col-md-6">
+													<div class="form-group">
+														<label class="label" for="subject">Contact No</label>
+														<input required type="number" class="form-control" name="number" id="number" placeholder="Enter Your number"onkeyup="chkc(this.value)" /><span id="o3"></span>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<label class="label" for="#">Photo</label>
+														<input required type="file" class="form-control" id="photo" name="photo"  ></input>
+													</div>
+												</div>
+												<div class="col-md-12">
+													<div class="form-group">
+														<input required type="submit" value="Register"id="mybutton" class="btn btn-primary">
+														<div class="submitting"></div>
+													</div>
+												</div>
+											</div>
+											{% csrf_token %}
+										</form>
+									</div>
+								</div>
+								<div class="col-lg-5 d-flex align-items-stretch">
+									<div class="info-wrap w-100 p-5 img" style="background-image: url(./static/images/gallery-2.jpg);">
+				          </div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="./static/js/jquery.min.js"></script>
+  <script src="./static/js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="./static/js/popper.min.js"></script>
+  <script src="./static/js/bootstrap.min.js"></script>
+  <script src="./static/js/jquery.easing.1.3.js"></script>
+  <script src="./static/js/jquery.waypoints.min.js"></script>
+  <script src="./static/js/jquery.stellar.min.js"></script>
+  <script src="./static/js/jquery.animateNumber.min.js"></script>
+  <script src="./static/js/bootstrap-datepicker.js"></script>
+  <script src="./static/js/jquery.timepicker.min.js"></script>
+  <script src="./static/js/owl.carousel.min.js"></script>
+  <script src="./static/js/jquery.magnific-popup.min.js"></script>
+  <script src="./static/js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="./static/js/google-map.js"></script>
+  <script src="./static/js/main.js"></script>
+
+
+    
+  </body>
+</html>
